@@ -43,10 +43,10 @@ def exact_url(url):
 
 def send_mail():
 	server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-	server.login("andrijajovanovic001@gmail.com", "mojasoba001")
+	server.login("email", "pass")
 	server.sendmail(
-	  "andrijajovanovic001@gmail.com", 
-	  "andrijaaki001@gmail.com", 
+	  "sender", 
+	  "recieve", 
 	  "check the 'Mini Smartphone iLight X, World's Smallest XS Android Mobile Phone 4G LTE, Super Small Tiny Micro HD 3 Touch Screen. Global Unlocked Great for Kids. 2GB RAM / 16GB ROM. Tiny iPhone X Look Alike' on amazon ")
 	server.quit()
 
